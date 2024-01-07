@@ -54,7 +54,7 @@ public class AzureDBManager {
         ResultSet rs= statement.executeQuery(idSqlQuerry);
 
         String sql = "INSERT INTO %s values( ".formatted(TABLE_TOMATO) +
-                "%s".formatted()
+                "%s".formatted() +
                 "%s".formatted(state) +
                 "%f".formatted(temp) +
                 "%f".formatted(hum) +
